@@ -164,7 +164,7 @@ function selectOption(option) {
     services: 'We offer comprehensive digital services including Web Development, Mobile Apps, Software Development, Digital Marketing, SEO, and AI Automation. Which service interests you most?',
     pricing : 'Our pricing is project-based and tailored to your specific needs. For an accurate quote, please fill out our contact form or schedule a free consultation with our team!',
     portfolio: 'We\'ve successfully delivered 30+ projects across various industries. You can view our showcase section above to see some of our recent work. Would you like to discuss your project?',
-    contact : 'You can reach us via:\n📧 Email: azeeltechnologies@gmail.com\n📞 Phone: +918579849414\n💬 WhatsApp: Click the green button\n📝 Or fill out the contact form above!'
+    contact : 'You can reach us via:\n📧 Email: azeeltechnologies@gmail.com\n📞 Phone: +916009590154\n💬 WhatsApp: Click the green button\n📝 Or fill out the contact form above!'
   };
   addMessage(responses[option], true);
 }
