@@ -2314,6 +2314,52 @@ window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxSha
     processFiles(e.dataTransfer.files);
   });
 })();
+
+
+
+
+  // On page load — read filter from URL
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const activeFilter = params.get('filter') || 'all'; // default to 'all'
+  applyFilter(activeFilter);
+});
+
+// On button click — update URL and apply filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    // Update URL without reloading page
+    const url = new URL(window.location);
+    url.searchParams.set('filter', filter);
+    window.history.pushState({}, '', url);
+
+    applyFilter(filter);
+  });
+});
+
+function applyFilter(filter) {
+  // Update button active states
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const isActive = btn.dataset.filter === filter;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', isActive);
+  });
+
+  // Show/hide project items
+  document.querySelectorAll('.project-item').forEach(item => {
+    const show = filter === 'all' || item.dataset.category === filter;
+    item.style.display = show ? 'block' : 'none';
+  });
+}
+
+
+
+  
 </script>
+
+
+  
 </body>
 </html>
