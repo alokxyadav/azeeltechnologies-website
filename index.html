@@ -94,10 +94,10 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#" onclick="scrollToTop(event)">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="alokyadav.html">Founder</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -119,9 +119,9 @@
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-nav-links">
     <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="portfolio.html>Portfolio</a>
     <a href="pricing.html">Pricing</a>
-    <a href="#industries">Industries</a>
+    <a href="#services">Services</a>
     <a href="alokyadav.html">Founder</a>
     <a href="#contact">Contact</a>
   </div>
@@ -488,59 +488,35 @@
 
 
 
-<!-- TESTIMONIALS  
-<section class="section" id="testimonials">
+
+<!-- TESTIMONIALS -->
+<section class="testi-section" aria-labelledby="testi-heading">
   <div class="container">
     <div class="section-head reveal">
-      <span class="tag"><i class="fas fa-quote-left"></i> Testimonials</span>
-      <h2>Words From <span class="gradient-text">Our Clients</span></h2>
-      <p>Discover why businesses trust Azeel Technologies as their long-term growth partner.</p>
+      <span class="tag"><i class="fas fa-quote-left" aria-hidden="true"></i> Client Voices</span>
+      <h2 id="testi-heading">What Our <span class="gradient-text">Clients Say</span></h2>
+      <p>Real feedback from real businesses that trusted Azeel Technologies to deliver measurable results.</p>
     </div>
-    <div class="testimonials-grid">
-
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="stars">★★★★</div>
-        <blockquote>"Their technical skill paired with strategic marketing insight made a tangible difference. We saw measurable ROI within the first month."</blockquote>
-        <div class="testimonial-author">
-           <img class="author-avatar" src="#" alt="Aman Maurya" loading="lazy" />   
-          <div>
-            <div class="author-name">Aman Maurya</div>
-            <div class="author-company"> Make the Eve</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="stars">★★★★★</div>
-        <blockquote>"Skilled, reliable, and results-driven. Azeel Technologies transformed our online presence and helped us reach entirely new audiences."</blockquote>
-        <div class="testimonial-author">
-           <img class="author-avatar" src="#" alt="saurav Yadav" loading="lazy" />  
-          <div> 
-            <div class="author-name">Saurav Yadav</div>
-            <div class="author-company">Aeroz Labs</div>
-          </div>
-        </div>
+    <div class="testi-grid stagger-grid" itemscope itemtype="https://schema.org/ItemList">
+        <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies delivered a professional website for Aeroz Labs with excellent online presence and smooth payment gateway integration. Reliable, efficient, and truly trustworthy."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">SY</div><div><div class="author-name" itemprop="name">Saurav Yadav</div><div class="author-co" itemprop="worksFor">Aeroz Labs</div></div></div>
       </div>
 
-
-        <div class="testimonial-card reveal reveal-delay-3">
-        <div class="stars">★★★★★</div>
-        <blockquote>"Azeel Technologies delivered outstanding results — professional, responsive, and genuinely invested in our success from day one."</blockquote>
-        <div class="testimonial-author">
-
-         <img class="author-avatar" src="#" alt="Alok Ranjan" loading="lazy" />   
-          <div>
-            <div class="author-name">Alok Ranjan</div>
-            <div class="author-company">Toolxier</div>
-          </div>
-        </div>
+      <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/><meta itemprop="bestRating" content="5"/>★★★★★</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies delivered outstanding results — professional, responsive, and genuinely invested in our success. The Toolxier platform exceeded every single expectation we had."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">PR</div><div><div class="author-name" itemprop="name">Priyanshu</div><div class="author-co" itemprop="worksFor">Toolxier</div></div></div>
       </div>
-  
+      <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="4"/><meta itemprop="bestRating" content="5"/>★★★★☆</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies boosted our website’s visibility with expert marketing and development—delivering fast growth, strong results, and measurable business impact."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">AM</div><div><div class="author-name" itemprop="name">Aman Maurya</div><div class="author-co" itemprop="worksFor">Make the Eve</div></div></div>
+      </div>
     </div>
   </div>
 </section>
-
-
--->
 
 
   
@@ -696,6 +672,7 @@
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="alokyadav.html">About the Founder</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="pricing.html">pricing</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#industries">Industries</a></li>
