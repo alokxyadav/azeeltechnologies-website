@@ -1597,7 +1597,7 @@ footer{background:var(--dark-2);border-top:1px solid var(--border-card);padding:
     </div>
     <div class="footer-bottom">
       <span>© 2026 Azeel Technologies — Best Digital Agency India. All rights reserved.</span>
-      <span>⭐ Trusted by 30+ Indian businesses · Gaya, Bihar, India</span>
+      <span>⭐ Trusted by 20+ Indian businesses, India</span>
     </div>
   </div>
 </footer>
@@ -1621,12 +1621,9 @@ document.querySelectorAll('.reveal,.stagger-grid.reveal-wrap').forEach(el=>revea
 const countObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=+el.dataset.target;let cur=0;const step=Math.max(1,Math.ceil(target/60));const timer=setInterval(()=>{cur=Math.min(cur+step,target);el.textContent=cur.toLocaleString('en-IN');if(cur>=target)clearInterval(timer)},18);countObs.unobserve(el)})},{threshold:.5});
 document.querySelectorAll('.counting').forEach(c=>countObs.observe(c));
 
-// ══════════════════════════════════════
-//  ★ FILTER — FIXED VERSION
-//  All projects visible by default.
-//  Clicking a category hides others.
-//  "All Projects" shows everything.
-// ══════════════════════════════════════
+// ══════════════════
+//  ★ FILTER
+// ══════════════════
 const filterBtns = document.querySelectorAll('.filter-btn');
 const cards = document.querySelectorAll('#projectsGrid .project-card');
 
@@ -1749,11 +1746,11 @@ window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxSha
     {src:"src/img1.png",caption:"We Build Remarkable Digital Experiences India"},
     {src:"src/img2.png",caption:"Toolxier — Built to Perform"},
     {src:"src/img4.png",caption:"Analytics That Drive Real Decisions India"},
-    {src:"src/img3.png",caption:"Aeroz Labs — Startup Website Bihar"},
+    {src:"src/img3.png",caption:"Aeroz Labs — Startup Website"},
     {src:"src/img5.png",caption:"Conversion-First Landing Pages India"},
     {src:"src/img6.png",caption:"SEO India — Real Results"},
     {src:"src/img7.png",caption:"Grow. Engage. Win in India."},
-    {src:"src/img8.png",caption:"Azeel Technologies — Best Digital Agency India"},
+    {src:"src/img8.png",caption:"Azeel Technologies — Best Digital Agency"},
   ];
   const doubled=[...images,...images];
   const track=document.getElementById('sliderTrack');
