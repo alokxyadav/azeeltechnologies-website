@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Azeel Technologies — Get In Touch</title>
+<meta name="description" content="Contact Azeel Technologies for AI automation, web development, mobile apps, SEO, and digital marketing services. Book a free strategy session with our expert team today.">
+<link rel="canonical" href="https://azeeltechnologies.com/contact.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Contact Us | Azeel Technologies">
+<meta property="og:description" content="Get in touch with Azeel Technologies. Book a free 30-minute strategy session and discover how we can transform your digital presence.">
+<meta property="og:image" content="https://azeeltechnologies.com/favicon.png">
+<meta property="og:url" content="https://azeeltechnologies.com/contact.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="pages.css">
+
+<style>
+/* ─── Contact page extras ─── */
+.contact-main-grid {
+  display: grid; grid-template-columns: 1fr; gap: 48px; align-items: start;
+}
+@media (min-width: 992px) { .contact-main-grid { grid-template-columns: 1fr 1.4fr; gap: 60px; } }
+
+.contact-info-panel h2 { font-size: clamp(1.75rem,4vw,2.2rem); font-weight: 800; margin-bottom: 14px; line-height: 1.2; }
+.contact-info-panel > p { color: var(--text-muted); line-height: 1.75; margin-bottom: 36px; }
+
+.contact-channels { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+.channel-card {
+  display: flex; align-items: center; gap: 16px; padding: 18px 20px;
+  border-radius: 14px; background: var(--dark-card); border: 1px solid var(--border);
+  transition: all 0.3s;
+}
+.channel-card:hover { border-color: rgba(37,99,235,.4); transform: translateX(4px); }
+.ch-icon {
+  width: 48px; height: 48px; border-radius: 14px; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(37,99,235,.18), rgba(6,182,212,.1));
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
+}
+.ch-text strong { display: block; color: var(--text); font-weight: 700; font-size: 0.9rem; margin-bottom: 2px; }
+.ch-text span { color: var(--text-muted); font-size: 0.8375rem; }
+.ch-text a { color: var(--primary); font-size: 0.8375rem; }
+.ch-text a:hover { text-decoration: underline; }
+
+/* Social media links */
+.social-contact { display: flex; gap: 10px; flex-wrap: wrap; }
+.sc-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 10px; font-size: 0.8125rem; font-weight: 600;
+  transition: all 0.3s;
+}
+.sc-link.instagram { background: rgba(225,48,108,.1); border: 1px solid rgba(225,48,108,.2); color: #e1306c; }
+.sc-link.instagram:hover { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: white; border-color: transparent; }
+.sc-link.linkedin { background: rgba(10,102,194,.1); border: 1px solid rgba(10,102,194,.2); color: #0a66c2; }
+.sc-link.linkedin:hover { background: #0a66c2; color: white; border-color: transparent; }
+.sc-link.twitter { background: rgba(0,0,0,.15); border: 1px solid rgba(255,255,255,.1); color: var(--text); }
+.sc-link.twitter:hover { background: #000; color: white; border-color: transparent; }
+.sc-link.whatsapp { background: rgba(37,211,102,.1); border: 1px solid rgba(37,211,102,.2); color: #25D366; }
+.sc-link.whatsapp:hover { background: #25D366; color: white; border-color: transparent; }
+
+/* Process steps */
+.process-steps { display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; }
+.ps-item { display: flex; gap: 16px; align-items: flex-start; padding-bottom: 24px; position: relative; }
+.ps-item::after { content:''; position: absolute; left: 19px; top: 40px; bottom: 0; width: 2px; background: var(--border); }
+.ps-item:last-child::after { display: none; }
+.ps-num {
+  width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 0.875rem; color: white;
+  position: relative; z-index: 1;
+}
+.ps-text h4 { font-size: 0.9375rem; font-weight: 700; margin-bottom: 4px; margin-top: 10px; }
+.ps-text p { font-size: 0.8375rem; color: var(--text-muted); line-height: 1.65; }
+
+/* Form card extras */
+.form-card {
+  padding: 40px; border-radius: 24px; background: var(--dark-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0,0,0,.3);
+  position: relative; overflow: hidden;
+}
+@media (min-width: 768px) { .form-card { padding: 48px; } }
+.form-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+/* Map */
+.map-section { border-radius: 20px; overflow: hidden; border: 1px solid var(--border); background: var(--dark-card); }
+.map-header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+.map-header h3 { font-size: 1rem; font-weight: 700; }
+.map-header p { font-size: 0.8125rem; color: var(--text-muted); }
+.map-placeholder {
+  background: linear-gradient(135deg, var(--dark-3), var(--dark-2));
+  height: 280px; display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 12px; color: var(--text-muted);
+}
+.map-placeholder .mp-icon { font-size: 2.5rem; }
+.map-placeholder p { font-size: 0.875rem; }
+.map-placeholder a { color: var(--primary); font-size: 0.875rem; font-weight: 600; }
+
+/* FAQ section */
+.faq-grid { display: grid; grid-template-columns: 1fr; gap: 0; max-width: 800px; margin: 0 auto; }
+
+/* Response time badges */
+.response-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.rb-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 600;
+  background: var(--dark-card); border: 1px solid var(--border);
+}
+.rb-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.rb-dot.green { background: var(--success); box-shadow: 0 0 6px rgba(16,185,129,.5); }
+.rb-dot.yellow { background: #f59e0b; box-shadow: 0 0 6px rgba(245,158,11,.4); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Azeel Technologies",
+  "url": "https://azeeltechnologies.com/contact.html",
+  "description": "Contact Azeel Technologies for digital services including web development, AI automation, SEO, and digital marketing.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Azeel Technologies",
+    "url": "https://azeeltechnologies.com",
+    "logo": "https://azeeltechnologies.com/favicon.png",
+    "telephone": "+916009590154",
+    "email": "contact@azeeltechnologies.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dobhi",
+      "addressLocality": "Gaya Ji",
+      "postalCode": "824220",
+      "addressRegion": "Bihar",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/azeel_technologies/",
+      "https://www.linkedin.com/company/azeeltechnologies",
+      "https://x.com/azeeltech"
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- SUCCESS -->
+<div class="success-message" id="successMessage">
+  <i class="fas fa-check-circle"></i>
+  <span>Message sent successfully! We'll be in touch within 24 hours.</span>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo-wrapper">
+      <div class="logo-icon"><img src="favicon.png" alt="Azeel Logo"></div>
+      <span class="logo">Azeel Technologies</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="founder.html">Founder</a></li>
+      <li><a href="internship.html">Internship</a></li>
+      <li><a href="https://azeeltechnologies.com/blog/">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact-form" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="founder.html">Founder</a>
+    <a href="internship.html">Internship</a>
+    <a href="https://azeeltechnologies.com/blog/">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="#contact-form" class="btn btn-primary">Send a Message</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-dots"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Contact</span>
+    </div>
+    <span class="tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+    <h1>Let's Build Something <span class="gradient-text">Remarkable Together</span></h1>
+    <p>Whether you have a clear brief or just a spark of an idea — our expert team is ready to listen, advise, and build something that exceeds your expectations.</p>
+    <div class="response-badges">
+      <div class="rb-badge"><div class="rb-dot green"></div> Response within 24 hours</div>
+      <div class="rb-badge"><div class="rb-dot green"></div> Free Strategy Session</div>
+      <div class="rb-badge"><div class="rb-dot yellow"></div> Available Mon–Sat</div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item">Free 30-Min Strategy Session</span>
+    <span class="ticker-item">Web Development</span>
+    <span class="ticker-item">Mobile App Development</span>
+    <span class="ticker-item">AI Automation</span>
+    <span class="ticker-item">Digital Marketing</span>
+    <span class="ticker-item">SEO Services</span>
+    <span class="ticker-item">Content Creation</span>
+    <span class="ticker-item">Google & Meta Ads</span>
+    <span class="ticker-item">Free 30-Min Strategy Session</span>
+    <span class="ticker-item">Web Development</span>
+    <span class="ticker-item">Mobile App Development</span>
+    <span class="ticker-item">AI Automation</span>
+    <span class="ticker-item">Digital Marketing</span>
+    <span class="ticker-item">SEO Services</span>
+    <span class="ticker-item">Content Creation</span>
+    <span class="ticker-item">Google & Meta Ads</span>
+  </div>
+</div>
+
+<!-- MAIN CONTACT SECTION -->
+<section class="section" id="contact-form" style="background: var(--dark-2);">
+  <div class="container">
+    <div class="contact-main-grid">
+
+      <!-- Left Panel -->
+      <div class="contact-info-panel reveal">
+        <h2>We'd Love to <span class="gradient-text">Hear From You</span></h2>
+        <p>Share your project goals, challenges, or any questions — our team responds within 24 hours to start your journey toward digital excellence.</p>
+
+        <!-- Contact Channels -->
+        <div class="contact-channels">
+          <div class="channel-card">
+            <div class="ch-icon">📞</div>
+            <div class="ch-text">
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+916009590154">+91 6009 590 154</a>
+            </div>
+          </div>
+          <div class="channel-card">
+            <div class="ch-icon">✉️</div>
+            <div class="ch-text">
+              <strong>Email</strong>
+              <a href="mailto:contact@azeeltechnologies.com">contact@azeeltechnologies.com</a>
+            </div>
+          </div>
+          <div class="channel-card">
+            <div class="ch-icon">📍</div>
+            <div class="ch-text">
+              <strong>Headquarters</strong>
+              <span>Dobhi, Gaya Ji – 824220, Bihar, India</span>
+            </div>
+          </div>
+          <div class="channel-card">
+            <div class="ch-icon">💻</div>
+            <div class="ch-text">
+              <strong>Development Centre</strong>
+              <span>IIIT Manipur, Imphal – 795002, Manipur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <p style="font-size:0.8125rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:12px;">Follow Us</p>
+          <div class="social-contact">
+            <a href="https://www.instagram.com/azeel_technologies/" target="_blank" rel="noopener" class="sc-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/company/azeeltechnologies" target="_blank" rel="noopener" class="sc-link linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://x.com/azeeltech" target="_blank" rel="noopener" class="sc-link twitter">𝕏 Twitter / X</a>
+            <a href="https://wa.me/916009590154?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener" class="sc-link whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- What happens next -->
+        <div style="margin-top:36px;">
+          <p style="font-size:0.8125rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:18px;">What Happens Next?</p>
+          <div class="process-steps">
+            <div class="ps-item">
+              <div class="ps-num">1</div>
+              <div class="ps-text">
+                <h4>You Send Your Message</h4>
+                <p>Fill out the form or reach out via phone, email, or WhatsApp — whichever is easiest for you.</p>
+              </div>
+            </div>
+            <div class="ps-item">
+              <div class="ps-num">2</div>
+              <div class="ps-text">
+                <h4>We Respond Within 24 Hours</h4>
+                <p>Our team reviews your enquiry and reaches out promptly to understand your goals in detail.</p>
+              </div>
+            </div>
+            <div class="ps-item">
+              <div class="ps-num">3</div>
+              <div class="ps-text">
+                <h4>Free Strategy Session</h4>
+                <p>We schedule a complimentary 30-minute session to map out your project roadmap and answer every question.</p>
+              </div>
+            </div>
+            <div class="ps-item">
+              <div class="ps-num">4</div>
+              <div class="ps-text">
+                <h4>We Build & Deliver</h4>
+                <p>With a clear plan and aligned expectations, our team gets to work — with full transparency at every stage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-card reveal reveal-delay-2">
+        <h3 style="font-size:1.35rem;font-weight:800;margin-bottom:6px;">Send Us a Message</h3>
+        <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:28px;">Fill out the form below and we'll get back to you within 24 hours. All fields marked * are required.</p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="name" placeholder="John Smith" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="email" placeholder="john@company.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+91 00000 00000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="fcompany">Company Name</label>
+              <input type="text" id="fcompany" name="company" placeholder="Your Company Ltd." autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Service Required *</label>
+            <select id="fservice" name="service" required>
+              <option value="">Select a service…</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Software Development">Software Development</option>
+              <option value="AI Automation">AI Automation</option>
+              <option value="Search Engine Optimisation">Search Engine Optimisation (SEO)</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Google Ads Management">Google Ads Management</option>
+              <option value="Meta Ads Management">Meta Ads Management</option>
+              <option value="Social Media Marketing">Social Media Marketing</option>
+              <option value="E-Commerce Solutions">E-Commerce Solutions</option>
+              <option value="Content Creation">Content Creation</option>
+              <option value="Video Editing">Video Editing</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Other">Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fbudget">Estimated Budget</label>
+            <select id="fbudget" name="budget">
+              <option value="">Select a budget range…</option>
+              <option value="Under ₹10,000">Under ₹10,000</option>
+              <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+              <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+              <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+              <option value="₹1,00,000 – ₹5,00,000">₹1,00,000 – ₹5,00,000</option>
+              <option value="Above ₹5,00,000">Above ₹5,00,000</option>
+              <option value="Let's discuss">Let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ftimeline">Project Timeline</label>
+            <select id="ftimeline" name="timeline">
+              <option value="">When do you need this?</option>
+              <option value="ASAP">As soon as possible</option>
+              <option value="1 Month">Within 1 month</option>
+              <option value="1-3 Months">1–3 months</option>
+              <option value="3-6 Months">3–6 months</option>
+              <option value="6+ Months">6+ months</option>
+              <option value="Flexible">Flexible / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Tell Us About Your Project *</label>
+            <textarea id="fmessage" name="message" placeholder="Describe your project, goals, challenges, and anything else you'd like us to know…" required style="min-height:150px;"></textarea>
+          </div>
+
+          <!-- Privacy note -->
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:20px;line-height:1.6;">
+            By submitting this form, you agree to our <a href="privacy.html" style="color:var(--primary)">Privacy Policy</a> and <a href="terms-of-service.html" style="color:var(--primary)">Terms of Service</a>. We will never share your information with third parties.
+          </p>
+
+          <button type="submit" class="btn btn-primary" id="sendBtn" style="width:100%;justify-content:center;padding:16px 28px;font-size:1rem;">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT INFO CARDS -->
+<section class="section" id="locations">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-map-marker-alt"></i> Our Locations</span>
+      <h2>Find Us <span class="gradient-text">Across India</span></h2>
+      <p>Headquartered in Bihar with a development centre in Manipur — serving clients nationwide and internationally.</p>
+    </div>
+    <div class="contact-info-grid" style="max-width:900px;margin:0 auto 48px;">
+      <div class="contact-info-card reveal reveal-delay-1" style="flex-direction:column;align-items:flex-start;">
+        <div style="display:flex;gap:16px;align-items:flex-start;width:100%;">
+          <div class="ci-icon" style="font-size:1.5rem;">🏢</div>
+          <div>
+            <strong style="display:block;color:var(--text);font-weight:800;font-size:1rem;margin-bottom:4px;">Headquarters</strong>
+            <span style="display:inline-block;padding:3px 10px;border-radius:100px;font-size:0.7rem;font-weight:700;background:rgba(37,99,235,.1);color:var(--primary);border:1px solid var(--border);margin-bottom:12px;">Bihar, India</span>
+          </div>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.875rem;line-height:1.7;margin-bottom:14px;">Dobhi, Gaya Ji – 824220, Bihar, India</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="tel:+916009590154" style="display:flex;align-items:center;gap:8px;font-size:0.8375rem;color:var(--primary);font-weight:600;"><i class="fas fa-phone" style="width:16px;"></i>+91 6009 590 154</a>
+          <a href="mailto:contact@azeeltechnologies.com" style="display:flex;align-items:center;gap:8px;font-size:0.8375rem;color:var(--primary);font-weight:600;"><i class="fas fa-envelope" style="width:16px;"></i>contact@azeeltechnologies.com</a>
+          <a href="https://wa.me/916009590154" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;font-size:0.8375rem;color:#25D366;font-weight:600;"><i class="fab fa-whatsapp" style="width:16px;"></i>Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="contact-info-card reveal reveal-delay-2" style="flex-direction:column;align-items:flex-start;">
+        <div style="display:flex;gap:16px;align-items:flex-start;width:100%;">
+          <div class="ci-icon" style="font-size:1.5rem;">💻</div>
+          <div>
+            <strong style="display:block;color:var(--text);font-weight:800;font-size:1rem;margin-bottom:4px;">Development Centre</strong>
+            <span style="display:inline-block;padding:3px 10px;border-radius:100px;font-size:0.7rem;font-weight:700;background:rgba(6,182,212,.1);color:var(--accent);border:1px solid rgba(6,182,212,.2);margin-bottom:12px;">Manipur, India</span>
+          </div>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.875rem;line-height:1.7;margin-bottom:14px;">Boys Hostel, IIIT Manipur, Imphal – 795002, Manipur, India</p>
+        <p style="color:var(--text-muted);font-size:0.8375rem;line-height:1.65;">Our engineering and innovation hub — home to our software development, AI, and product teams. Embedded within the prestigious Indian Institute of Information Technology, Manipur.</p>
+      </div>
+    </div>
+
+    <!-- Map placeholder (embedded iframe-ready) -->
+    <div class="map-section reveal">
+      <div class="map-header">
+        <div class="ci-icon">🗺️</div>
+        <div>
+          <h3>Azeel Technologies — Gaya Ji, Bihar</h3>
+          <p>Dobhi, Gaya Ji – 824220, Bihar, India</p>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58432!2d84.9!3d24.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d8b60f0000001%3A0x1!2sGaya!5e0!3m2!1sen!2sin!4v1"
+        width="100%" height="320" style="border:0;display:block;filter:grayscale(40%) contrast(1.1);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Azeel Technologies Location - Gaya Ji, Bihar, India">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-question-circle"></i> FAQ</span>
+      <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+      <p>Answers to the most common questions we receive from our clients and prospects.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question">
+          <h3>How quickly do you respond to enquiries?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>We aim to respond to all enquiries within 24 hours on working days (Monday to Saturday). For urgent matters, we recommend reaching out via WhatsApp at +91 6009 590 154 for a faster response.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question">
+          <h3>What does the free strategy session include?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Our free 30-minute strategy session is a no-obligation consultation where we understand your business goals, discuss your digital challenges, and recommend the most effective solutions. You'll receive actionable insights and a clear project roadmap — completely free of charge.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-question">
+          <h3>Do you work with businesses outside India?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. While we are based in India, we work with clients worldwide. Our team is experienced in collaborating across time zones and delivering projects for clients in the US, UK, UAE, and beyond. All communication is conducted in English.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question">
+          <h3>What information should I have ready before contacting you?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Don't worry if you don't have everything figured out — we're happy to help at any stage. If possible, it helps to share: (1) what you're trying to achieve, (2) your approximate budget range, (3) your preferred timeline, and (4) any inspiration or reference examples. But even just a project idea is enough to get started.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question">
+          <h3>How much do your services cost?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Pricing varies by project scope, complexity, and service type. We offer flexible pricing models including fixed-price projects and monthly retainers. Visit our <a href="pricing.html" style="color:var(--primary)">Pricing page</a> for indicative packages, or contact us for a custom quote tailored to your exact requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-question">
+          <h3>Do you offer ongoing support after project delivery?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! We believe in long-term partnerships. After project delivery, we offer maintenance retainers, performance monitoring, content updates, and continuous improvement services. We stay with you and your business well beyond launch day.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-question">
+          <h3>Can I see examples of your previous work?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Of course! You can view our work on the <a href="portfolio.html" style="color:var(--primary)">Portfolio page</a>. We've delivered 30+ projects across industries including healthcare, education, e-commerce, fintech, and more. Client case studies are available upon request.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-question">
+          <h3>Is information I share with you kept confidential?</h3>
+          <div class="faq-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, absolutely. All information you share with Azeel Technologies is treated with strict confidentiality. We are happy to sign an NDA (Non-Disclosure Agreement) before any detailed project discussions if required. Your business information will never be shared with third parties without your explicit consent.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container reveal">
+    <span class="tag"><i class="fas fa-rocket"></i> Ready to Start?</span>
+    <h2>Your Digital Transformation <span class="gradient-text">Starts Here</span></h2>
+    <p>Join 30+ businesses that have trusted Azeel Technologies to accelerate their digital growth. Your success story starts with a single conversation.</p>
+    <div class="cta-actions">
+      <a href="#contact-form" class="btn btn-primary">Send a Message <i class="fas fa-arrow-right"></i></a>
+      <a href="https://wa.me/916009590154?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:18px;">No obligation · Expert advice · 24-hour response</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrapper">
+          <div class="logo-icon"><img src="favicon.png" alt="Azeel Logo"></div>
+          <span class="logo" style="font-size:1.35rem;">Azeel Technologies</span>
+        </div>
+        <p>Transforming businesses through innovative digital solutions — web, software, AI, and marketing excellence.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/azeel_technologies/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/azeeltechnologies" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/azeeltech" class="social-btn" aria-label="Twitter/X" target="_blank" rel="noopener">𝕏</a>
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="founder.html">About the Founder</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="internship.html">Internship</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Web Development</a></li>
+          <li><a href="index.html#services">Mobile Apps</a></li>
+          <li><a href="index.html#services">Digital Marketing</a></li>
+          <li><a href="index.html#services">AI Automation</a></li>
+          <li><a href="index.html#services">SEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="cookies-policy.html">Cookie Policy</a></li>
+          <li><a href="contact.html" style="color:var(--primary)">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Azeel Technologies. All rights reserved.</span>
+      <span>⭐ Built with excellence — trusted by businesses worldwide.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/916009590154?text=Hi%2C%20I%27m%20interested%20in%20your%20services" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>

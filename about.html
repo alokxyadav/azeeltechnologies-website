@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us | Azeel Technologies — AI, IT Services & Digital Marketing</title>
+<meta name="description" content="Learn about Azeel Technologies — a premier full-service digital agency specialising in AI automation, web development, mobile apps, SEO, and digital marketing. Founded by Alok Ranjan.">
+<link rel="canonical" href="https://azeeltechnologies.com/about.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="About Us | Azeel Technologies">
+<meta property="og:description" content="Meet the team behind Azeel Technologies — your digital growth partner for web, software, AI, and marketing.">
+<meta property="og:image" content="https://azeeltechnologies.com/favicon.png">
+<meta property="og:url" content="https://azeeltechnologies.com/about.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="pages.css">
+
+<style>
+/* Mission Statement Banner */
+.mission-banner {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--primary) 0%, #1e40af 50%, var(--accent) 100%);
+  position: relative; overflow: hidden; text-align: center;
+}
+.mission-banner::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.04'%3E%3Cpath d='M20 0L40 20L20 40L0 20z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.mission-banner blockquote {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+  position: relative; z-index: 2;
+}
+.mission-banner cite { display: block; font-size: 0.875rem; color: rgba(255,255,255,0.75); font-style: normal; margin-top: 14px; font-family: 'Outfit', sans-serif; }
+
+/* Founder Card */
+.founder-spotlight {
+  display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center;
+}
+@media (min-width: 992px) { .founder-spotlight { grid-template-columns: 340px 1fr; gap: 60px; } }
+.founder-img-wrap { position: relative; }
+.founder-img {
+  width: 100%; aspect-ratio: 3/4; object-fit: cover;
+  border-radius: 20px; box-shadow: 0 24px 60px rgba(0,0,0,.5); display: block;
+}
+.founder-img-wrap::before {
+  content: ''; position: absolute; inset: -12px;
+  border-radius: 28px; border: 1px dashed rgba(37,99,235,.25); z-index: -1;
+}
+.founder-connect { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.founder-connect a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px; border-radius: 10px; font-size: 0.8125rem; font-weight: 600;
+  transition: all 0.3s;
+}
+.founder-connect .linkedin { background: rgba(10,102,194,.15); border: 1px solid rgba(10,102,194,.3); color: #0a66c2; }
+.founder-connect .linkedin:hover { background: #0a66c2; color: #fff; }
+.founder-connect .twitter { background: rgba(29,161,242,.1); border: 1px solid rgba(29,161,242,.25); color: #1da1f2; }
+.founder-connect .twitter:hover { background: #1da1f2; color: #fff; }
+.founder-connect .insta { background: rgba(225,48,108,.1); border: 1px solid rgba(225,48,108,.25); color: #e1306c; }
+.founder-connect .insta:hover { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+
+/* Services overview grid */
+.svc-overview-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 640px) { .svc-overview-grid { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 992px) { .svc-overview-grid { grid-template-columns: repeat(3,1fr); } }
+.svc-overview-card {
+  padding: 28px 22px; border-radius: 18px; background: var(--dark-card);
+  border: 1px solid var(--border); transition: all 0.3s; text-align: center;
+}
+.svc-overview-card:hover { transform: translateY(-6px); border-color: var(--primary); box-shadow: 0 16px 40px rgba(37,99,235,.15); }
+.svc-overview-card .icon { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+.svc-overview-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.svc-overview-card p { font-size: 0.8375rem; color: var(--text-muted); line-height: 1.65; }
+
+/* Locations */
+.locations-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 768px) { .locations-grid { grid-template-columns: repeat(2,1fr); } }
+.location-card {
+  padding: 32px 28px; border-radius: 20px; background: var(--dark-card);
+  border: 1px solid var(--border); transition: all 0.3s; position: relative; overflow: hidden;
+}
+.location-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+.location-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,.3); border-color: rgba(37,99,235,.3); }
+.location-card .loc-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: rgba(37,99,235,.12); color: var(--primary); border: 1px solid var(--border); margin-bottom: 16px; }
+.location-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; }
+.location-card p { font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Azeel Technologies",
+  "url": "https://azeeltechnologies.com/about.html",
+  "description": "Learn about Azeel Technologies — a full-service digital agency specialising in AI, web development, and digital marketing.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Azeel Technologies",
+    "url": "https://azeeltechnologies.com",
+    "logo": "https://azeeltechnologies.com/favicon.png",
+    "foundingDate": "2023",
+    "founder": {
+      "@type": "Person",
+      "name": "Alok Ranjan",
+      "sameAs": "https://www.linkedin.com/in/alok-ran-jan/"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dobhi",
+      "addressLocality": "Gaya Ji",
+      "postalCode": "824220",
+      "addressRegion": "Bihar",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+916009590154",
+      "email": "contact@azeeltechnologies.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/azeeltechnologies",
+      "https://www.instagram.com/azeel_technologies/",
+      "https://x.com/azeeltech"
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- SUCCESS -->
+<div class="success-message" id="successMessage">
+  <i class="fas fa-check-circle"></i>
+  <span>Message sent! We'll be in touch soon.</span>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo-wrapper">
+      <div class="logo-icon"><img src="favicon.png" alt="Azeel Logo"></div>
+      <span class="logo">Azeel Technologies</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="founder.html">Founder</a></li>
+      <li><a href="internship.html">Internship</a></li>
+      <li><a href="https://azeeltechnologies.com/blog/">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="founder.html">Founder</a>
+    <a href="internship.html">Internship</a>
+    <a href="https://azeeltechnologies.com/blog/">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="btn btn-primary">Get Started</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-dots"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>About Us</span>
+    </div>
+    <span class="tag"><i class="fas fa-users"></i> Our Story</span>
+    <h1>We Are <span class="gradient-text">Azeel Technologies</span></h1>
+    <p>A premier, full-service digital agency built to transform ambitious businesses into digital powerhouses — combining technology, creativity, and strategy into one unstoppable force.</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section" style="background:var(--dark-2); padding:60px 0;">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="num gradient-text"><span class="counting" data-target="30">0</span>+</div>
+        <div class="lbl">Projects Completed</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="num gradient-text"><span class="counting" data-target="98">0</span>%</div>
+        <div class="lbl">Client Satisfaction</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="num gradient-text"><span class="counting" data-target="10">0</span>+</div>
+        <div class="lbl">Team Experts</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-4">
+        <div class="num gradient-text"><span class="counting" data-target="8">0</span>+</div>
+        <div class="lbl">Industries Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION QUOTE -->
+<div class="mission-banner">
+  <div class="container">
+    <blockquote>
+      "Our mission is to empower every business — regardless of size — to thrive in the digital era through innovative technology, honest partnerships, and results that truly matter."
+      <cite>— Alok Ranjan, Founder & CEO, Azeel Technologies</cite>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ABOUT US STORY -->
+<section class="section" id="story">
+  <div class="container">
+    <div class="about-hero-grid">
+      <div class="about-img-wrap reveal">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=80&auto=format&fit=crop" alt="Azeel Technologies team collaborating" loading="lazy">
+        <div class="about-badge">
+          <div class="ab-icon">🏆</div>
+          <div>
+            <div class="ab-val">Award-Winning</div>
+            <div class="ab-lbl">Digital Agency</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <span class="tag"><i class="fas fa-info-circle"></i> Who We Are</span>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;margin-bottom:20px;line-height:1.2;">Your Premier <span class="gradient-text">Full-Service</span> Digital Partner</h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:14px;">Azeel Technologies is a premier, full-service digital agency specialising in crafting custom digital solutions that blend stunning design, robust engineering, and strategic growth marketing.</p>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:14px;">Founded and headquartered in Bihar, India, with a dedicated development centre at IIIT Manipur, we bring together a passionate team of engineers, designers, marketers, and AI specialists united by a single purpose: to help businesses grow, scale, and lead in the digital world.</p>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">Our clients range from ambitious startups to established enterprises across industries including healthcare, finance, education, e-commerce, logistics, and media — all united by their desire to leverage technology as a true growth engine.</p>
+
+        <div class="about-check-list">
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p><strong style="color:var(--text)">Custom-built solutions</strong> — no templates, no shortcuts; everything crafted precisely for your unique goals.</p>
+          </div>
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p><strong style="color:var(--text)">Agile delivery</strong> — fast, iterative development with complete transparency at every stage of the project.</p>
+          </div>
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p><strong style="color:var(--text)">Long-term partnership</strong> — we stay with you well beyond launch, growing alongside your business every step of the way.</p>
+          </div>
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p><strong style="color:var(--text)">AI-powered innovation</strong> — we integrate the latest artificial intelligence tools to keep your business ahead of the curve.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;">
+          <a href="contact.html" class="btn btn-primary">Work With Us <i class="fas fa-arrow-right"></i></a>
+          <a href="founder.html" class="btn btn-outline">Meet the Founder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-heart"></i> Our Values</span>
+      <h2>The Principles That <span class="gradient-text">Guide Everything We Do</span></h2>
+      <p>At Azeel Technologies, values aren't words on a wall — they're the foundation of every decision, every project, and every client relationship.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal reveal-delay-1">
+        <span class="value-icon">🎯</span>
+        <h4>Client First</h4>
+        <p>Your success is our success. We prioritise understanding your goals deeply before proposing any solution.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <span class="value-icon">⚡</span>
+        <h4>Innovation</h4>
+        <p>We stay at the forefront of technology — constantly learning, experimenting, and implementing what works best.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <span class="value-icon">🔍</span>
+        <h4>Transparency</h4>
+        <p>Honest communication at every stage. No hidden fees, no vague timelines — just clear, consistent updates.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <span class="value-icon">💎</span>
+        <h4>Quality</h4>
+        <p>We don't cut corners. Every pixel, every line of code, and every campaign is built to the highest standard.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <span class="value-icon">🤝</span>
+        <h4>Partnership</h4>
+        <p>We're not just vendors — we're partners. Your business matters to us long after the project is delivered.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <span class="value-icon">🌍</span>
+        <h4>Impact</h4>
+        <p>We measure success by the real-world impact we create for your business, your customers, and your community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER SECTION -->
+<section class="section" id="founder-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-user-tie"></i> Leadership</span>
+      <h2>Meet Our <span class="gradient-text">Founder</span></h2>
+      <p>Driven by a passion for technology and a vision to democratise digital excellence for businesses everywhere.</p>
+    </div>
+    <div class="founder-spotlight">
+      <div class="founder-img-wrap reveal">
+        <img class="founder-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80&auto=format&fit=crop" alt="Alok Ranjan - Founder, Azeel Technologies" loading="lazy">
+        <div class="founder-connect">
+          <a href="https://www.linkedin.com/in/alok-ran-jan/" target="_blank" rel="noopener" class="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://x.com/azeeltech" target="_blank" rel="noopener" class="twitter">𝕏 Twitter</a>
+          <a href="https://www.instagram.com/azeel_technologies/" target="_blank" rel="noopener" class="insta"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <h2 style="font-size:clamp(1.75rem,4vw,2.2rem);font-weight:800;margin-bottom:6px;">Alok Ranjan</h2>
+        <p style="color:var(--primary);font-weight:700;font-size:1rem;margin-bottom:20px;">Founder & CEO — Azeel Technologies</p>
+        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:14px;">Alok Ranjan is the visionary founder of Azeel Technologies and a passionate technologist with a deep understanding of how digital solutions can transform businesses. Currently a student at IIIT Manipur, Alok founded Azeel Technologies with the belief that world-class digital services should be accessible to every business — not just the largest corporations.</p>
+        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:14px;">Under his leadership, Azeel Technologies has grown into a trusted digital partner for businesses across India and beyond — delivering impactful web platforms, mobile applications, AI automation systems, and data-driven marketing campaigns that generate real, measurable results.</p>
+        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:24px;">Alok combines technical depth with entrepreneurial clarity — always focused on building long-term client relationships built on trust, transparency, and exceptional results. His work is featured on <a href="https://www.linkedin.com/in/alok-ran-jan/" target="_blank" rel="noopener" style="color:var(--primary)">LinkedIn</a> and across Azeel's social platforms.</p>
+
+        <div class="about-check-list">
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p>Full-stack developer with expertise in modern web technologies and AI integration.</p>
+          </div>
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p>Strategic digital marketer with proven results in SEO, paid ads, and brand building.</p>
+          </div>
+          <div class="about-check-item">
+            <div class="check">✓</div>
+            <p>Entrepreneur committed to empowering Indian startups and SMEs through technology.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;">
+          <a href="founder.html" class="btn btn-primary">Full Founder Profile <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR SERVICES OVERVIEW -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-cogs"></i> What We Do</span>
+      <h2>Comprehensive Solutions For <span class="gradient-text">Every Goal</span></h2>
+      <p>From concept to launch and beyond — Azeel Technologies covers every discipline your digital success demands.</p>
+    </div>
+    <div class="svc-overview-grid">
+      <div class="svc-overview-card reveal reveal-delay-1">
+        <span class="icon">🌐</span>
+        <h3>Website Development</h3>
+        <p>Fast, beautiful, conversion-optimised websites built for every screen size and audience.</p>
+      </div>
+      <div class="svc-overview-card reveal reveal-delay-2">
+        <span class="icon">📱</span>
+        <h3>Mobile App Development</h3>
+        <p>Native and cross-platform apps for iOS and Android with fluid UX that keeps users coming back.</p>
+      </div>
+      <div class="svc-overview-card reveal reveal-delay-3">
+        <span class="icon">🤖</span>
+        <h3>AI Automation</h3>
+        <p>Intelligent automation that eliminates repetitive tasks and unlocks new efficiencies across your operations.</p>
+      </div>
+      <div class="svc-overview-card reveal reveal-delay-1">
+        <span class="icon">🔍</span>
+        <h3>Search Engine Optimisation</h3>
+        <p>AI-driven SEO strategies that drive sustainable, high-quality organic visibility for your business.</p>
+      </div>
+      <div class="svc-overview-card reveal reveal-delay-2">
+        <span class="icon">📣</span>
+        <h3>Digital Marketing</h3>
+        <p>Full-funnel campaigns including Google Ads, Meta Ads, and social media that convert audiences into loyal customers.</p>
+      </div>
+      <div class="svc-overview-card reveal reveal-delay-3">
+        <span class="icon">🎬</span>
+        <h3>Content & Video</h3>
+        <p>Compelling content creation and professional video editing that tells your brand story powerfully.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="index.html#services" class="btn btn-primary">Explore All Services <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY / TIMELINE -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-road"></i> Our Journey</span>
+      <h2>How We Got <span class="gradient-text">Here</span></h2>
+      <p>From a spark of an idea to a trusted digital agency — every milestone has shaped who we are today.</p>
+    </div>
+    <div style="max-width:680px;margin:0 auto;">
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023</div>
+          <h3>Azeel Technologies Founded</h3>
+          <p>Alok Ranjan establishes Azeel Technologies with a clear mission: to deliver world-class digital services to businesses across India and help them compete globally.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023 — Early Days</div>
+          <h3>First Client Projects Delivered</h3>
+          <p>Azeel delivers its first wave of web development and digital marketing projects, earning 5-star reviews and establishing a reputation for reliability and quality.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <h3>AI & Automation Services Launched</h3>
+          <p>Responding to growing demand, Azeel expands into AI automation — helping clients streamline operations, reduce costs, and unlock new business efficiencies.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <h3>Team Grows to 10+ Experts</h3>
+          <p>Azeel builds a skilled team of developers, designers, marketers, and AI specialists — creating a multi-disciplinary powerhouse capable of end-to-end digital transformation.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2025</div>
+          <h3>30+ Projects & 8+ Industries</h3>
+          <p>Azeel celebrates over 30 successful project deliveries across 8 industries — healthcare, education, e-commerce, finance, logistics, media, hospitality, and real estate.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026 — Present</div>
+          <h3>Expanding Horizons</h3>
+          <p>Azeel Technologies continues to grow — expanding our service offerings, client base, and geographic reach — with an unwavering commitment to innovation and client success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-map-marker-alt"></i> Our Presence</span>
+      <h2>Where We <span class="gradient-text">Operate From</span></h2>
+      <p>Rooted in India, serving clients globally. Our offices bring together the best technical and creative talent from across the country.</p>
+    </div>
+    <div class="locations-grid">
+      <div class="location-card reveal reveal-delay-1">
+        <span class="loc-badge">🏢 Headquarters</span>
+        <h3>Gaya Ji, Bihar</h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:12px;">Dobhi, Gaya Ji – 824220, Bihar, India</p>
+        <p style="color:var(--text-muted);font-size:0.875rem;line-height:1.7;">Our main operations hub — home to our leadership, business development, and client success teams. Serving clients across India and internationally from the heart of Bihar.</p>
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="tel:+916009590154" style="font-size:0.8125rem;color:var(--primary);font-weight:600;"><i class="fas fa-phone" style="margin-right:6px;"></i>+91 6009 590 154</a>
+          <a href="mailto:contact@azeeltechnologies.com" style="font-size:0.8125rem;color:var(--primary);font-weight:600;"><i class="fas fa-envelope" style="margin-right:6px;"></i>contact@azeeltechnologies.com</a>
+        </div>
+      </div>
+      <div class="location-card reveal reveal-delay-2">
+        <span class="loc-badge" style="background:rgba(6,182,212,.1);color:var(--accent);border-color:rgba(6,182,212,.2);">💻 Development Centre</span>
+        <h3>IIIT Manipur, Imphal</h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:12px;">Boys Hostel, IIIT Manipur, Imphal – 795002, Manipur, India</p>
+        <p style="color:var(--text-muted);font-size:0.875rem;line-height:1.7;">Our technology and innovation centre — where our engineering team builds, codes, and ships exceptional digital products. Embedded within one of India's premier technical institutes.</p>
+        <div style="margin-top:18px;">
+          <span style="font-size:0.8125rem;color:var(--text-muted);">Home of our engineering, AI, and product development teams.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag"><i class="fas fa-quote-left"></i> Client Voices</span>
+      <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+      <p>Real feedback from real businesses that trusted Azeel Technologies to deliver measurable results.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:20px;max-width:960px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:1fr;gap:20px;">
+        <style>@media(min-width:768px){.testi-r{grid-template-columns:repeat(3,1fr)!important;}}</style>
+        <div style="display:grid;gap:20px;" class="testi-r">
+          <div class="card reveal reveal-delay-1">
+            <div style="color:#f59e0b;font-size:0.875rem;letter-spacing:2px;margin-bottom:12px;">★★★★★</div>
+            <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:18px;font-style:italic;">"Azeel Technologies delivered a professional website for Aeroz Labs with excellent online presence and smooth payment gateway integration. Reliable, efficient, and truly trustworthy."</p>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:white;flex-shrink:0;">SY</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9375rem;">Saurav Yadav</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Aeroz Labs</div>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <div style="color:#f59e0b;font-size:0.875rem;letter-spacing:2px;margin-bottom:12px;">★★★★★</div>
+            <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:18px;font-style:italic;">"Azeel Technologies delivered outstanding results — professional, responsive, and genuinely invested in our success. The Toolxier platform exceeded every single expectation we had."</p>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:white;flex-shrink:0;">PR</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9375rem;">Priyanshu</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Toolxier</div>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal reveal-delay-3">
+            <div style="color:#f59e0b;font-size:0.875rem;letter-spacing:2px;margin-bottom:12px;">★★★★☆</div>
+            <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:18px;font-style:italic;">"Azeel Technologies boosted our website's visibility with expert marketing and development — delivering fast growth, strong results, and measurable business impact."</p>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.875rem;color:white;flex-shrink:0;">AM</div>
+              <div>
+                <div style="font-weight:700;font-size:0.9375rem;">Aman Maurya</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Make the Eve</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container reveal">
+    <span class="tag"><i class="fas fa-rocket"></i> Ready to Start?</span>
+    <h2>Let's Build Something <span class="gradient-text">Remarkable Together</span></h2>
+    <p>Book a free, no-obligation 30-minute strategy session and discover how Azeel Technologies can accelerate your growth.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Book Your Free Session <i class="fas fa-arrow-right"></i></a>
+      <a href="portfolio.html" class="btn btn-outline">See Our Work</a>
+    </div>
+    <p style="font-size:0.75rem;color:var(--text-muted);margin-top:18px;">No obligation · Expert advice · 30-minute session</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrapper">
+          <div class="logo-icon"><img src="favicon.png" alt="Azeel Logo"></div>
+          <span class="logo" style="font-size:1.35rem;">Azeel Technologies</span>
+        </div>
+        <p>Transforming businesses through innovative digital solutions — web, software, AI, and marketing excellence.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/azeel_technologies/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/azeeltechnologies" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/azeeltech" class="social-btn" aria-label="Twitter/X" target="_blank" rel="noopener">𝕏</a>
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="founder.html">About the Founder</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="internship.html">Internship</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Web Development</a></li>
+          <li><a href="index.html#services">Mobile Apps</a></li>
+          <li><a href="index.html#services">Digital Marketing</a></li>
+          <li><a href="index.html#services">AI Automation</a></li>
+          <li><a href="index.html#services">SEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="cookies-policy.html">Cookie Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Azeel Technologies. All rights reserved.</span>
+      <span>⭐ Built with excellence — trusted by businesses worldwide.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/916009590154?text=Hi%2C%20I%27m%20interested%20in%20your%20services" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
