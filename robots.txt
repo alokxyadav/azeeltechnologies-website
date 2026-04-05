@@ -1,167 +1,201 @@
-# ============================================================
-#  robots.txt — Azeel Technologies
-#  Website : https://www.azeeltechnologies.com
-#  Updated : 2025-04-04
+# ================================================================
+#  robots.txt — Azeel Technologies 
+#  Website : https://azeeltechnologies.com
+#  Updated : 2026-04-05
 #
-#  PURPOSE
-#  -------
-#  This file instructs search engine crawlers which parts of
-#  the site they may or may not access.
-#
-#  BEST PRACTICE NOTES
-#  -------------------
-#  • "Disallow:" lines block indexing of low-value / private URLs.
-#  • Crawl-delay values are set conservatively to protect server.
-#  • Sitemap is declared at the bottom for every crawler.
-#  • Social media profile links are listed as canonical references.
-# ============================================================
+#  TOTAL PAGES COVERED: 35 URLs
+#  Core pages: 8  |  Blog posts: 23  |  Legal: 4
+# ================================================================
 
 
-# ── GLOBAL RULES (applies to all bots) ─────────────────────
+# ────────────────────────────────────────────────────────────────
+#  ALL CRAWLERS — Global default rules
+# ────────────────────────────────────────────────────────────────
 
 User-agent: *
 
-# -- Allow core public content --
+# ── Core pages ──────────────────────────────────────────────────
 Allow: /
-Allow: /services/
-Allow: /about/
-Allow: /portfolio/
-Allow: /pricing/
-Allow: /contact/
-Allow: /internship/
-Allow: /founder/
+Allow: /index.html
+Allow: /about.html
+Allow: /founder.html
+Allow: /portfolio.html
+Allow: /pricing.html
+Allow: /contact.html
+Allow: /internship.html
+
+# ── Blog section ────────────────────────────────────────────────
 Allow: /blog/
-Allow: /privacy-policy/
-Allow: /terms-of-service/
-Allow: /cookie-policy/
-Allow: /disclaimer/
+Allow: /blog/index.html
+Allow: /blog/advanced-seo-tips.html
+Allow: /blog/ai-agents-agentic-ai-complete-guide.html
+Allow: /blog/ai-automation-master-seo.html
+Allow: /blog/ai-changing-business.html
+Allow: /blog/ai-ecommerce-complete-guide.html
+Allow: /blog/ai-for-startups-scale-faster-intelligent-automation.html
+Allow: /blog/ai-humanizer-free-tools-guide.html
+Allow: /blog/ai-video-create-free.html
+Allow: /blog/best-ai-tools-for-students.html
+Allow: /blog/best-free-ai-video-generators.html
+Allow: /blog/earning-with-affiliate-marketing.html
+Allow: /blog/ecommerce-seo.html
+Allow: /blog/geo-generative-engine-optimization.html
+Allow: /blog/happenstance-ai-review.html
+Allow: /blog/how-to-build-ai-startup.html
+Allow: /blog/how-to-make-money-with-ai-agents.html
+Allow: /blog/how-to-start-dropshipping.html
+Allow: /blog/how-to-start-freelancing-earn-money-online.html
+Allow: /blog/prompt-engineering.html
+Allow: /blog/robotics-automation.html
+Allow: /blog/top-20-ai-tools-2026.html
+Allow: /blog/web-dev-trends.html
+Allow: /blog/workflow-automation.html
 
-# -- Assets crawlers should read --
-Allow: /assets/
-Allow: /images/
-Allow: /css/
-Allow: /js/
+# ── Legal pages ─────────────────────────────────────────────────
+Allow: /privacy.html
+Allow: /terms-of-service.html
+Allow: /cookies-policy.html
+Allow: /disclaimer.html
 
-# -- Block admin, backend, and internal paths --
+# ── Static assets (CSS/JS needed for rendering score) ──────────
+Allow: /style.css
+Allow: /pages.css
+Allow: /script.js
+Allow: /pages.js
+Allow: /favicon.png
+Allow: /alokyadav.jpeg
+Allow: /alokyadav1.jpeg
+Allow: /src/
+
+# ── Block backend / server paths (future-proof) ─────────────────
 Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /wp-login.php
 Disallow: /dashboard/
 Disallow: /login/
-Disallow: /logout/
-Disallow: /register/
-Disallow: /account/
-Disallow: /user/
 Disallow: /api/
-Disallow: /cgi-bin/
+Disallow: /config/
 Disallow: /.git/
 Disallow: /.env
-Disallow: /config/
 Disallow: /node_modules/
 Disallow: /tmp/
 Disallow: /cache/
+Disallow: /private/
 
-# -- Block low-value / duplicate content URLs --
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?source=*
-Disallow: /*?fbclid=*
-Disallow: /*?gclid=*
-Disallow: /*?sessionid=*
-Disallow: /*&print=
-Disallow: /search?
-Disallow: /tag/
-Disallow: /author/
-Disallow: /page/
+# ── Block tracking query strings (prevents duplicate content) ───
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?utm_content=
+Disallow: /*?utm_term=
+Disallow: /*?ref=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?msclkid=
+Disallow: /*?sessionid=
 
-# -- Block media files that aren't needed for SEO --
-Disallow: /*.json$
-Disallow: /*.xml$
-# (exception: sitemap.xml is explicitly allowed via Sitemap: directive below)
-Allow: /sitemap.xml
-Allow: /sitemap_index.xml
+# ── Block repo/dev files that ended up at root ──────────────────
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /SETUP_GUIDE.md
 
-# -- Crawl delay (seconds) — be gentle on shared hosting --
+# ── Crawl delay ─────────────────────────────────────────────────
 Crawl-delay: 2
 
 
-# ── GOOGLEBOT (Google Search) ──────────────────────────────
+# ────────────────────────────────────────────────────────────────
+#  GOOGLEBOT — Google Search (no crawl-delay needed)
+# ────────────────────────────────────────────────────────────────
 
 User-agent: Googlebot
 Allow: /
 Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /login/
-Disallow: /api/
-# No crawl-delay — Google self-manages responsibly
+Disallow: /wp-admin/
+Disallow: /*?utm_source=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /SETUP_GUIDE.md
 
 
-# ── GOOGLEBOT-IMAGE ────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────
+#  GOOGLEBOT-IMAGE — Allows blog + founder images
+# ────────────────────────────────────────────────────────────────
 
 User-agent: Googlebot-Image
-Allow: /assets/
-Allow: /images/
+Allow: /favicon.png
+Allow: /alokyadav.jpeg
+Allow: /alokyadav1.jpeg
+Allow: /src/
 Disallow: /private/
 
 
-# ── BINGBOT (Microsoft Bing) ───────────────────────────────
+# ────────────────────────────────────────────────────────────────
+#  BINGBOT — Microsoft Bing
+# ────────────────────────────────────────────────────────────────
 
 User-agent: Bingbot
 Allow: /
 Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /login/
-Disallow: /api/
+Disallow: /*?utm_source=
+Disallow: /*?fbclid=
+Disallow: /README.md
+Disallow: /LICENSE
 Crawl-delay: 3
 
 
-# ── SLURP (Yahoo) ─────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────
+#  OTHER MAJOR SEARCH ENGINES
+# ────────────────────────────────────────────────────────────────
 
 User-agent: Slurp
 Allow: /
 Crawl-delay: 5
 
-
-# ── DUCKDUCKBOT ───────────────────────────────────────────
-
 User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 3
 
-
-# ── BAIDUSPIDER (Baidu) ───────────────────────────────────
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 5
 
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 5
 
 
-# ── YANDEXBOT ─────────────────────────────────────────────
+# ────────────────────────────────────────────────────────────────
+#  SOCIAL MEDIA BOTS — MUST allow for rich link previews
+#  These power your previews on LinkedIn, Instagram, X, WhatsApp
+# ────────────────────────────────────────────────────────────────
 
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 5
-
-
-# ── TWITTERBOT (Twitter/X link previews) ──────────────────
-
+# X / Twitter — @azeeltech link cards
 User-agent: Twitterbot
 Allow: /
 
-
-# ── FACEBOOKEXTERNALHIT (Meta OG previews) ────────────────
-
+# Facebook + Instagram + WhatsApp — Meta OG previews
 User-agent: facebookexternalhit
 Allow: /
 
-
-# ── LINKEDINBOT (LinkedIn previews) ───────────────────────
-
+# LinkedIn — company page previews (linkedin.com/company/azeeltechnologies)
 User-agent: LinkedInBot
 Allow: /
 
+# WhatsApp link previews
+User-agent: WhatsApp
+Allow: /
 
-# ── BLOCK KNOWN BAD / SCRAPER BOTS ────────────────────────
+# Pinterest
+User-agent: Pinterest
+Allow: /
+
+
+# ────────────────────────────────────────────────────────────────
+#  BLOCK KNOWN SCRAPER / SEO TOOL BOTS
+#  (Waste your crawl budget — block them)
+# ────────────────────────────────────────────────────────────────
 
 User-agent: AhrefsBot
 Disallow: /
@@ -187,8 +221,24 @@ Disallow: /
 User-agent: ia_archiver
 Disallow: /
 
+User-agent: Scrapy
+Disallow: /
 
-# ── AI TRAINING BOTS (block to protect your content) ──────
+User-agent: python-requests
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+
+# ────────────────────────────────────────────────────────────────
+#  BLOCK AI TRAINING BOTS
+#  Your 23 blog posts are original content — protect them
+#  from being scraped to train AI models for free.
+# ────────────────────────────────────────────────────────────────
 
 User-agent: GPTBot
 Disallow: /
@@ -211,27 +261,22 @@ Disallow: /
 User-agent: PerplexityBot
 Disallow: /
 
+User-agent: Bytespider
+Disallow: /
 
-# ══════════════════════════════════════════════════════════
-#  SITEMAP DECLARATIONS
-#  Always place Sitemap: directives at the very bottom.
-#  Multiple sitemaps are supported.
-# ══════════════════════════════════════════════════════════
+User-agent: omgili
+Disallow: /
 
-Sitemap: https://www.azeeltechnologies.com/sitemap.xml
+User-agent: omgilibot
+Disallow: /
 
-# If you later split into separate sitemaps, add them here:
-# Sitemap: https://www.azeeltechnologies.com/sitemap-pages.xml
-# Sitemap: https://www.azeeltechnologies.com/sitemap-blog.xml
-# Sitemap: https://www.azeeltechnologies.com/sitemap-images.xml
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
 
 
-# ══════════════════════════════════════════════════════════
-#  SOCIAL MEDIA CANONICAL PROFILES
-#  (Informational reference — not a robots.txt standard,
-#   but helps developers/SEOs reading this file)
-#
-#  LinkedIn  : https://www.linkedin.com/company/azeeltechnologies
-#  Instagram : https://www.instagram.com/azeel_technologies/
-#  X/Twitter : https://x.com/azeeltech
-# ══════════════════════════════════════════════════════════
+
+
+Sitemap: https://azeeltechnologies.com/sitemap.xml
