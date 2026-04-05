@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xsi:schemaLocation="
+    http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.google.com/schemas/sitemap-image/1.1
+    http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- ============================================================ -->
+  <!--  AZEEL TECHNOLOGIES — sitemap.xml                           -->
+  <!--  Website  : https://www.azeeltechnologies.com               -->
+  <!--  Generated: 2025-04-04  |  Priority scale: 1.0 → 0.4       -->
+  <!--  Changefreq guide:                                          -->
+  <!--    always   = live data                                      -->
+  <!--    hourly   = real-time feeds                                -->
+  <!--    daily    = blog / news                                    -->
+  <!--    weekly   = service pages                                  -->
+  <!--    monthly  = stable core pages                              -->
+  <!--    yearly   = legal / policy                                 -->
+  <!-- ============================================================ -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  TIER 1 — CORE / MONEY PAGES  (priority 1.0) -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/og-home.jpg</image:loc>
+      <image:title>Azeel Technologies — AI, IT Services &amp; Digital Marketing</image:title>
+      <image:caption>Transforming visions into intelligent digital solutions with AI innovation, advanced IT expertise, and strategic marketing.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services-overview.jpg</image:loc>
+      <image:title>All Services — Azeel Technologies</image:title>
+      <image:caption>Full-spectrum digital services: AI, web, app, SEO, ads, and more.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/contact/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/pricing/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  TIER 2 — BRAND / TRUST PAGES  (0.8–0.9)  -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/about/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/about-team.jpg</image:loc>
+      <image:title>About Azeel Technologies — Our Story, Mission &amp; Team</image:title>
+      <image:caption>A passionate team of developers, designers, and marketers building digital futures.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/founder/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/founder.jpg</image:loc>
+      <image:title>Founder — Azeel Technologies</image:title>
+      <image:caption>Meet the visionary behind Azeel Technologies.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/portfolio/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/portfolio-cover.jpg</image:loc>
+      <image:title>Portfolio — Azeel Technologies Projects &amp; Case Studies</image:title>
+      <image:caption>Explore our work: scalable products built for businesses worldwide.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/internship/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!--  TIER 3 — SERVICE DETAIL PAGES  (0.8 each)              -->
+  <!--  Each service page is a standalone SEO landing page.     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Web Development -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/web-development/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/web-development.jpg</image:loc>
+      <image:title>Web Development Services — Azeel Technologies</image:title>
+      <image:caption>Bespoke, high-performance websites &amp; web applications built to scale.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Mobile App Development -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/mobile-app-development/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/mobile-app-development.jpg</image:loc>
+      <image:title>Mobile App Development — iOS &amp; Android — Azeel Technologies</image:title>
+      <image:caption>Native and cross-platform mobile apps with fluid UX that keeps users coming back.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- UI/UX Design -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/ui-ux-design/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ui-ux-design.jpg</image:loc>
+      <image:title>UI/UX Design Services — Azeel Technologies</image:title>
+      <image:caption>User-centric design that captivates audiences and drives measurable growth.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI & Automation -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/ai-automation/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ai-automation.jpg</image:loc>
+      <image:title>AI &amp; Business Automation Services — Azeel Technologies</image:title>
+      <image:caption>Intelligent automation that eliminates repetitive tasks and unlocks new efficiencies.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- E-Commerce Solutions -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/ecommerce-solutions/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ecommerce.jpg</image:loc>
+      <image:title>E-Commerce Development Solutions — Azeel Technologies</image:title>
+      <image:caption>Scalable e-commerce platforms built for reliability, speed, and seamless user experience.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Content Creation -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/content-creation/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/content-creation.jpg</image:loc>
+      <image:title>Content Creation Services — Azeel Technologies</image:title>
+      <image:caption>Strategic content that builds brand authority and drives organic engagement.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- AI-Driven SEO -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/ai-seo/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ai-seo.jpg</image:loc>
+      <image:title>AI-Driven SEO Services — Azeel Technologies</image:title>
+      <image:caption>A dedicated SEO strategy that improves every ranking factor for sustainable organic visibility.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Google Ads Management -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/google-ads-management/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/google-ads.jpg</image:loc>
+      <image:title>Google Ads Management Services — Azeel Technologies</image:title>
+      <image:caption>Data-driven Google Ads campaigns that maximize ROI and drive qualified traffic.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Meta Ads Management -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/meta-ads-management/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/meta-ads.jpg</image:loc>
+      <image:title>Meta Ads Management (Facebook &amp; Instagram Ads) — Azeel Technologies</image:title>
+      <image:caption>Full-funnel Meta ad campaigns that build brand authority and convert audiences into loyal customers.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Social Media Marketing -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/social-media-marketing/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/social-media.jpg</image:loc>
+      <image:title>Social Media Marketing Services — Azeel Technologies</image:title>
+      <image:caption>Strategic social media management that grows your brand and engages your audience.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Video Editing -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/video-editing/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/video-editing.jpg</image:loc>
+      <image:title>Professional Video Editing Services — Azeel Technologies</image:title>
+      <image:caption>Cinematic video production and editing that tells your brand story compellingly.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Performance Campaigns -->
+  <url>
+    <loc>https://www.azeeltechnologies.com/services/performance-campaigns/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.azeeltechnologies.com/assets/images/services/performance-campaigns.jpg</image:loc>
+      <image:title>Performance Marketing Campaigns — Azeel Technologies</image:title>
+      <image:caption>Full-funnel performance campaigns engineered for measurable ROI and scalable growth.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  TIER 4 — BLOG / RESOURCES  (0.7)         -->
+  <!--  Add individual post URLs below as you     -->
+  <!--  publish. This is a placeholder structure. -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/blog/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Example blog post entries — replace with real slugs -->
+  <!--
+  <url>
+    <loc>https://www.azeeltechnologies.com/blog/ai-trends-2025/</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  TIER 5 — LEGAL / POLICY  (0.3–0.4)       -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/privacy-policy/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/terms-of-service/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/cookie-policy/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.azeeltechnologies.com/disclaimer/</loc>
+    <lastmod>2025-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
