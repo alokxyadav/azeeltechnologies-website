@@ -2,7 +2,6 @@
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xsi:schemaLocation="
     http://www.sitemaps.org/schemas/sitemap/0.9
@@ -10,320 +9,480 @@
     http://www.google.com/schemas/sitemap-image/1.1
     http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
 
-  <!-- ============================================================ -->
-  <!--  AZEEL TECHNOLOGIES — sitemap.xml                           -->
-  <!--  Website  : https://www.azeeltechnologies.com               -->
-  <!--  Generated: 2025-04-04  |  Priority scale: 1.0 → 0.4       -->
-  <!--  Changefreq guide:                                          -->
-  <!--    always   = live data                                      -->
-  <!--    hourly   = real-time feeds                                -->
-  <!--    daily    = blog / news                                    -->
-  <!--    weekly   = service pages                                  -->
-  <!--    monthly  = stable core pages                              -->
-  <!--    yearly   = legal / policy                                 -->
-  <!-- ============================================================ -->
+  <!--
+  ================================================================
+   AZEEL TECHNOLOGIES — sitemap.xml 
+   Website   : https://azeeltechnologies.com
+   LinkedIn  : https://www.linkedin.com/company/azeeltechnologies
+   Instagram : https://www.instagram.com/azeel_technologies/
+   X/Twitter : https://x.com/azeeltech
+   Generated : 2026-04-05  
 
-  <!-- ══════════════════════════════════════════ -->
-  <!--  TIER 1 — CORE / MONEY PAGES  (priority 1.0) -->
-  <!-- ══════════════════════════════════════════ -->
+   TOTAL URLs : 35
+     Core pages  :  8
+     Blog index  :  2
+     Blog posts  : 20
+     Legal pages :  4
+     Internship  :  1
+
+   PRIORITY SCALE:
+     1.0 = Homepage
+     0.9 = Core conversion pages (pricing, contact, internship)
+     0.8 = Brand/trust pages (about, founder, portfolio)
+     0.7 = Blog index
+     0.6 = Blog posts (your biggest SEO growth engine)
+     0.4 = Legal pages
+  ================================================================
+  -->
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 1 ▸ HOMEPAGE                       priority 1.0  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://www.azeeltechnologies.com/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/og-home.jpg</image:loc>
-      <image:title>Azeel Technologies — AI, IT Services &amp; Digital Marketing</image:title>
-      <image:caption>Transforming visions into intelligent digital solutions with AI innovation, advanced IT expertise, and strategic marketing.</image:caption>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Azeel Technologies — Web, AI &amp; Digital Solutions</image:title>
+      <image:caption>Transforming visions into intelligent digital solutions with AI, IT expertise, and strategic marketing.</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://www.azeeltechnologies.com/services/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/index.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services-overview.jpg</image:loc>
-      <image:title>All Services — Azeel Technologies</image:title>
-      <image:caption>Full-spectrum digital services: AI, web, app, SEO, ads, and more.</image:caption>
-    </image:image>
   </url>
 
-  <url>
-    <loc>https://www.azeeltechnologies.com/contact/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 2 ▸ CORE CONVERSION PAGES          priority 0.9  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://www.azeeltechnologies.com/pricing/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/pricing.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- ══════════════════════════════════════════ -->
-  <!--  TIER 2 — BRAND / TRUST PAGES  (0.8–0.9)  -->
-  <!-- ══════════════════════════════════════════ -->
-
   <url>
-    <loc>https://www.azeeltechnologies.com/about/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/contact.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/about-team.jpg</image:loc>
-      <image:title>About Azeel Technologies — Our Story, Mission &amp; Team</image:title>
-      <image:caption>A passionate team of developers, designers, and marketers building digital futures.</image:caption>
-    </image:image>
   </url>
 
   <url>
-    <loc>https://www.azeeltechnologies.com/founder/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/internship.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/founder.jpg</image:loc>
-      <image:title>Founder — Azeel Technologies</image:title>
-      <image:caption>Meet the visionary behind Azeel Technologies.</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://www.azeeltechnologies.com/portfolio/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/portfolio-cover.jpg</image:loc>
-      <image:title>Portfolio — Azeel Technologies Projects &amp; Case Studies</image:title>
-      <image:caption>Explore our work: scalable products built for businesses worldwide.</image:caption>
-    </image:image>
   </url>
 
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 3 ▸ BRAND & TRUST PAGES            priority 0.8  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
   <url>
-    <loc>https://www.azeeltechnologies.com/internship/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/about.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <!--  TIER 3 — SERVICE DETAIL PAGES  (0.8 each)              -->
-  <!--  Each service page is a standalone SEO landing page.     -->
-  <!-- ══════════════════════════════════════════════════════════ -->
-
-  <!-- Web Development -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/web-development/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/web-development.jpg</image:loc>
-      <image:title>Web Development Services — Azeel Technologies</image:title>
-      <image:caption>Bespoke, high-performance websites &amp; web applications built to scale.</image:caption>
+      <image:loc>https://azeeltechnologies.com/alokyadav.jpeg</image:loc>
+      <image:title>About Azeel Technologies — Story, Mission &amp; Team</image:title>
+      <image:caption>The passionate team behind Azeel Technologies driving digital innovation.</image:caption>
     </image:image>
   </url>
 
-  <!-- Mobile App Development -->
   <url>
-    <loc>https://www.azeeltechnologies.com/services/mobile-app-development/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://azeeltechnologies.com/founder.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/mobile-app-development.jpg</image:loc>
-      <image:title>Mobile App Development — iOS &amp; Android — Azeel Technologies</image:title>
-      <image:caption>Native and cross-platform mobile apps with fluid UX that keeps users coming back.</image:caption>
+      <image:loc>https://azeeltechnologies.com/alokyadav1.jpeg</image:loc>
+      <image:title>Founder — Alok Yadav | Azeel Technologies</image:title>
+      <image:caption>Meet the visionary founder behind Azeel Technologies.</image:caption>
     </image:image>
   </url>
 
-  <!-- UI/UX Design -->
   <url>
-    <loc>https://www.azeeltechnologies.com/services/ui-ux-design/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/portfolio.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ui-ux-design.jpg</image:loc>
-      <image:title>UI/UX Design Services — Azeel Technologies</image:title>
-      <image:caption>User-centric design that captivates audiences and drives measurable growth.</image:caption>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Portfolio — Projects &amp; Case Studies | Azeel Technologies</image:title>
+      <image:caption>Explore our work: scalable digital products built for businesses worldwide.</image:caption>
     </image:image>
   </url>
 
-  <!-- AI & Automation -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/ai-automation/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ai-automation.jpg</image:loc>
-      <image:title>AI &amp; Business Automation Services — Azeel Technologies</image:title>
-      <image:caption>Intelligent automation that eliminates repetitive tasks and unlocks new efficiencies.</image:caption>
-    </image:image>
-  </url>
 
-  <!-- E-Commerce Solutions -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/ecommerce-solutions/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ecommerce.jpg</image:loc>
-      <image:title>E-Commerce Development Solutions — Azeel Technologies</image:title>
-      <image:caption>Scalable e-commerce platforms built for reliability, speed, and seamless user experience.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Content Creation -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/content-creation/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/content-creation.jpg</image:loc>
-      <image:title>Content Creation Services — Azeel Technologies</image:title>
-      <image:caption>Strategic content that builds brand authority and drives organic engagement.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- AI-Driven SEO -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/ai-seo/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/ai-seo.jpg</image:loc>
-      <image:title>AI-Driven SEO Services — Azeel Technologies</image:title>
-      <image:caption>A dedicated SEO strategy that improves every ranking factor for sustainable organic visibility.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Google Ads Management -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/google-ads-management/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/google-ads.jpg</image:loc>
-      <image:title>Google Ads Management Services — Azeel Technologies</image:title>
-      <image:caption>Data-driven Google Ads campaigns that maximize ROI and drive qualified traffic.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Meta Ads Management -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/meta-ads-management/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/meta-ads.jpg</image:loc>
-      <image:title>Meta Ads Management (Facebook &amp; Instagram Ads) — Azeel Technologies</image:title>
-      <image:caption>Full-funnel Meta ad campaigns that build brand authority and convert audiences into loyal customers.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Social Media Marketing -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/social-media-marketing/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/social-media.jpg</image:loc>
-      <image:title>Social Media Marketing Services — Azeel Technologies</image:title>
-      <image:caption>Strategic social media management that grows your brand and engages your audience.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Video Editing -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/video-editing/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/video-editing.jpg</image:loc>
-      <image:title>Professional Video Editing Services — Azeel Technologies</image:title>
-      <image:caption>Cinematic video production and editing that tells your brand story compellingly.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- Performance Campaigns -->
-  <url>
-    <loc>https://www.azeeltechnologies.com/services/performance-campaigns/</loc>
-    <lastmod>2025-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.azeeltechnologies.com/assets/images/services/performance-campaigns.jpg</image:loc>
-      <image:title>Performance Marketing Campaigns — Azeel Technologies</image:title>
-      <image:caption>Full-funnel performance campaigns engineered for measurable ROI and scalable growth.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- ══════════════════════════════════════════ -->
-  <!--  TIER 4 — BLOG / RESOURCES  (0.7)         -->
-  <!--  Add individual post URLs below as you     -->
-  <!--  publish. This is a placeholder structure. -->
-  <!-- ══════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 4 ▸ BLOG INDEX                     priority 0.7  -->
+  <!-- ═══════════════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://www.azeeltechnologies.com/blog/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/blog/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Example blog post entries — replace with real slugs -->
-  <!--
   <url>
-    <loc>https://www.azeeltechnologies.com/blog/ai-trends-2025/</loc>
-    <lastmod>2025-03-15</lastmod>
+    <loc>https://azeeltechnologies.com/blog/index.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 5 ▸ BLOG POSTS  (20 total)         priority 0.6  -->
+  <!--                                                         -->
+  <!--  Source: github.com/…/azeeltechnologies-website/blog/  -->
+  <!--  All 20 exact .html filenames confirmed from repo.      -->
+  <!--  Blog posts = #1 driver of organic SEO traffic.        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- 01. Advanced SEO Tips -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/advanced-seo-tips.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Advanced SEO Tips Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Expert-level SEO techniques and strategies to dominate search rankings in 2026.</image:caption>
+    </image:image>
   </url>
-  -->
 
-  <!-- ══════════════════════════════════════════ -->
-  <!--  TIER 5 — LEGAL / POLICY  (0.3–0.4)       -->
-  <!-- ══════════════════════════════════════════ -->
+  <!-- 02. AI Agents — Agentic AI Complete Guide -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-agents-agentic-ai-complete-guide.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>AI Agents &amp; Agentic AI Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Everything you need to know about AI agents and agentic AI systems in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 03. AI Automation Master SEO -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-automation-master-seo.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>AI Automation Master SEO Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Master AI-powered automation for SEO to drive sustainable organic growth.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 04. AI Changing Business -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-changing-business.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>How AI Is Changing Business in 2026 — Azeel Technologies</image:title>
+      <image:caption>Discover how artificial intelligence is transforming business operations and strategy.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 05. AI E-Commerce Complete Guide -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-ecommerce-complete-guide.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>AI E-Commerce Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>How to use AI to build, grow, and optimize your e-commerce business in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 06. AI for Startups — Scale Faster with Intelligent Automation -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-for-startups-scale-faster-intelligent-automation.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>AI for Startups: Scale Faster with Intelligent Automation — Azeel Technologies</image:title>
+      <image:caption>How startups can leverage AI automation to scale operations faster and smarter.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 07. AI Humanizer Free Tools Guide -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-humanizer-free-tools-guide.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Best AI Humanizer Free Tools Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Top free tools to humanize AI-generated content for better SEO and audience engagement.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 08. AI Video Create Free -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ai-video-create-free.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Create AI Videos Free — Best Tools &amp; Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Step-by-step guide to creating professional AI videos using free tools.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 09. Best AI Tools for Students -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/best-ai-tools-for-students.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Best AI Tools for Students 2026 — Azeel Technologies</image:title>
+      <image:caption>Top AI tools every student should be using to study smarter and boost productivity.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 10. Best Free AI Video Generators -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/best-free-ai-video-generators.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Best Free AI Video Generators 2026 — Azeel Technologies</image:title>
+      <image:caption>Ranked: the best free AI video generation tools available right now.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 11. Earning with Affiliate Marketing -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/earning-with-affiliate-marketing.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Earning with Affiliate Marketing Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>How to build a profitable affiliate marketing income stream from scratch in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 12. E-Commerce SEO -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/ecommerce-seo.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>E-Commerce SEO Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>The complete SEO strategy for e-commerce websites to rank higher and sell more.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 13. Geo Generative Engine Optimization -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/geo-generative-engine-optimization.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Geo Generative Engine Optimization Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>How to optimize for AI-powered generative search engines with geo-targeting strategies.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 14. Happenstance AI Review -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/happenstance-ai-review.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Happenstance AI Review 2026 — Azeel Technologies</image:title>
+      <image:caption>In-depth honest review of Happenstance AI: features, pricing, pros and cons.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 15. How to Build an AI Startup -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/how-to-build-ai-startup.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>How to Build an AI Startup Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Step-by-step blueprint for building a successful AI startup from idea to launch.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 16. How to Make Money with AI Agents -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/how-to-make-money-with-ai-agents.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>How to Make Money with AI Agents 2026 — Azeel Technologies</image:title>
+      <image:caption>Proven strategies to generate income using AI agents and automation in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 17. How to Start Dropshipping -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/how-to-start-dropshipping.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>How to Start Dropshipping Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>The complete beginner's guide to launching a profitable dropshipping business in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 18. How to Start Freelancing & Earn Money Online -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/how-to-start-freelancing-earn-money-online.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>How to Start Freelancing &amp; Earn Money Online 2026 — Azeel Technologies</image:title>
+      <image:caption>The complete guide to starting a freelancing career and earning money online in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 19. Prompt Engineering -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/prompt-engineering.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Prompt Engineering Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>Master the art and science of prompt engineering to get the best results from AI models.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 20. Robotics Automation -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/robotics-automation.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Robotics Automation 2026 Complete Guide — Azeel Technologies</image:title>
+      <image:caption>How robotics and automation are reshaping industries and what it means for your business.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 21. Top 20 AI Tools 2026 -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/top-20-ai-tools-2026.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Top 20 AI Tools 2026 — The Definitive List — Azeel Technologies</image:title>
+      <image:caption>Ranked: the 20 best AI tools you absolutely need to know about in 2026.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 22. Web Dev Trends -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/web-dev-trends.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Web Development Trends 2026 — Azeel Technologies</image:title>
+      <image:caption>The biggest web development trends shaping the industry and how to stay ahead.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 23. Workflow Automation -->
+  <url>
+    <loc>https://azeeltechnologies.com/blog/workflow-automation.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://azeeltechnologies.com/favicon.png</image:loc>
+      <image:title>Workflow Automation Complete Guide 2026 — Azeel Technologies</image:title>
+      <image:caption>How to automate your business workflows to save time and scale operations efficiently.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!--  TIER 6 ▸ LEGAL / POLICY PAGES           priority 0.4  -->
+  <!--  Critical for E-E-A-T trust signals.                   -->
+  <!-- ═══════════════════════════════════════════════════════ -->
 
   <url>
-    <loc>https://www.azeeltechnologies.com/privacy-policy/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/privacy.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.azeeltechnologies.com/terms-of-service/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/terms-of-service.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.azeeltechnologies.com/cookie-policy/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/cookies-policy.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.azeeltechnologies.com/disclaimer/</loc>
-    <lastmod>2025-04-04</lastmod>
+    <loc>https://azeeltechnologies.com/disclaimer.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
