@@ -127,6 +127,7 @@
     <a href="founder.html">Founder</a>
     <a href="https://azeeltechnologies.com/blog/">Blog</a>
     <a href="#services">Services</a>
+    
     <a href="#contact">Contact</a>
   </div>
   <a href="#contact" class="btn btn-primary">Get Started</a>
@@ -490,73 +491,40 @@
   </div>
 </section>
 
+
+
+
 <!-- TESTIMONIALS -->
-<section class="testimonials-section section" id="testimonials">
+<section class="testi-section" aria-labelledby="testi-heading">
   <div class="container">
     <div class="section-head reveal">
-      <span class="tag"><i class="fas fa-star"></i> Testimonials</span>
-      <h2>What Our <span class="gradient-text">Clients Say</span></h2>
-      <p>Real feedback from businesses we've helped grow and transform digitally.</p>
+      <span class="tag"><i class="fas fa-quote-left" aria-hidden="true"></i> Client Voices</span>
+      <h2 id="testi-heading">What Our <span class="gradient-text">Clients Say</span></h2>
+      <p>Real feedback from real businesses that trusted Azeel Technologies to deliver measurable results.</p>
     </div>
-
-    <div class="testimonial-carousel">
-      <button class="carousel-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
-      <div class="testimonial-track">
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>Azeel Technologies transformed our online presence completely. Their web development team delivered beyond our expectations — on time, on budget, and with outstanding quality.</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">RK</div>
-            <div>
-              <div class="author-name">Rahul Kumar</div>
-              <div class="author-company">CEO, TechStart India</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>The AI automation solution they built for us saved over 20 hours of manual work every week. Incredibly professional team with deep technical expertise.</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">SP</div>
-            <div>
-              <div class="author-name">Sneha Patel</div>
-              <div class="author-company">Operations Head, RetailMax</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>Our SEO rankings jumped from page 3 to page 1 within 4 months. The digital marketing team at Azeel truly knows what they're doing. Highly recommended!</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">AM</div>
-            <div>
-              <div class="author-name">Arjun Mehta</div>
-              <div class="author-company">Founder, GrowthBridge</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <blockquote>Working with Azeel was a fantastic experience. They built our mobile app from scratch and the result is polished, fast, and our users absolutely love it.</blockquote>
-          <div class="testimonial-author">
-            <div class="author-avatar">PD</div>
-            <div>
-              <div class="author-name">Priya Desai</div>
-              <div class="author-company">Product Manager, EduLearn</div>
-            </div>
-          </div>
-        </div>
-
+    <div class="testi-grid stagger-grid" itemscope itemtype="https://schema.org/ItemList">
+        <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5">★★★★★</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies delivered a professional website for Aeroz Labs with excellent online presence and smooth payment gateway integration. Reliable, efficient, and truly trustworthy."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">SY</div><div><div class="author-name" itemprop="name">Saurav Yadav</div><div class="author-co" itemprop="worksFor">Aeroz Labs</div></div></div>
       </div>
-      <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
-      <div class="carousel-dots"></div>
+
+      <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5">★★★★★</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies delivered outstanding results — professional, responsive, and genuinely invested in our success. The Toolxier platform exceeded every single expectation we had."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">PR</div><div><div class="author-name" itemprop="name">Priyanshu</div><div class="author-co" itemprop="worksFor">Toolxier</div></div></div>
+      </div>
+      <div class="testi-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Review">
+        <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="4"><meta itemprop="bestRating" content="5">★★★★☆</div>
+        <blockquote itemprop="reviewBody">"Azeel Technologies boosted our website’s visibility with expert marketing and development—delivering fast growth, strong results, and measurable business impact."</blockquote>
+        <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><div class="author-av" aria-hidden="true">AM</div><div><div class="author-name" itemprop="name">Aman Maurya</div><div class="author-co" itemprop="worksFor">Make the Eve</div></div></div>
+      </div>
     </div>
   </div>
 </section>
+
+
+  
 
 <!-- CTA -->
 <section class="cta-band">
@@ -632,6 +600,7 @@
         </div>
       </div>
 
+
       <div class="contact-form reveal reveal-delay-2">
         <form id="contactForm" onsubmit="handleSubmit(event)">
           <div class="form-row">
@@ -684,6 +653,8 @@
   </div>
 </section>
 
+
+
 <!-- FOOTER -->
 <footer>
   <div class="container">
@@ -707,14 +678,14 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="founder.html">About the Founder</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.html">pricing</a></li>
           <li><a href="internship.html">Internship</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#industries">Industries</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h2>Services</h2>
         <ul>
           <li><a href="#">Web Development</a></li>
           <li><a href="#">Mobile Apps</a></li>
@@ -751,7 +722,8 @@
 </a>
 
 <!-- AI ASSISTANT BUTTON -->
-<div class="ai-assistant-btn" id="aiAssistantBtn" role="button" aria-label="AI Assistant">
+ <!-- <div class="ai-assistant-btn" id="aiAssistantBtn" aria-label="AI Assistant"> -->
+  <div class="ai-assistant-btn" id="aiAssistantBtn" role="button" aria-label="AI Assistant">
   <div class="ai-pulse"></div>
   <i class="fas fa-robot"></i>
 </div>
