@@ -185,3 +185,86 @@ aiSendBtn.addEventListener('click', sendAiMessage);
 aiInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') sendAiMessage();
 });
+
+
+
+
+
+<script>
+
+/* CAROUSEL */
+
+const track = document.querySelector(".testimonial-track");
+const slides = document.querySelectorAll(".testimonial-card");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+const dotsContainer = document.querySelector(".carousel-dots");
+
+let index = 0;
+
+/* DOTS */
+
+slides.forEach((_,i)=>{
+const dot=document.createElement("span")
+if(i===0) dot.classList.add("active")
+dotsContainer.appendChild(dot)
+
+dot.addEventListener("click",()=>{
+index=i
+updateCarousel()
+})
+})
+
+const dots=document.querySelectorAll(".carousel-dots span")
+
+function updateCarousel(){
+
+track.style.transform=`translateX(-${index*100}%)`
+
+dots.forEach(d=>d.classList.remove("active"))
+dots[index].classList.add("active")
+
+}
+
+next.onclick=()=>{
+index=(index+1)%slides.length
+updateCarousel()
+}
+
+prev.onclick=()=>{
+index=(index-1+slides.length)%slides.length
+updateCarousel()
+}
+
+/* AUTO SLIDE */
+
+setInterval(()=>{
+index=(index+1)%slides.length
+updateCarousel()
+},5000)
+
+
+
+/* SCROLL REVEAL */
+
+const reveals=document.querySelectorAll(".reveal")
+
+function revealScroll(){
+
+reveals.forEach(el=>{
+
+const windowHeight=window.innerHeight
+const top=el.getBoundingClientRect().top
+
+if(top<windowHeight-100){
+el.classList.add("active")
+}
+
+})
+
+}
+
+window.addEventListener("scroll",revealScroll)
+revealScroll()
+
+</script>
