@@ -226,7 +226,7 @@ aiInput.addEventListener('keypress', (e) => {
       updateCarousel();
     });
   }
-
+//test
   // Auto slide
   setInterval(function () {
     index = (index + 1) % slides.length;
