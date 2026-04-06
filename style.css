@@ -674,7 +674,7 @@ nav.scrolled {
   background: rgba(37,99,235,.12); border-color: var(--primary); color: #fff; transform: translateY(-5px);
 }
 
-/* TESTIMONIALS */
+/* TESTIMONIALS 
 .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 992px) { .testimonials-grid { grid-template-columns: repeat(3,1fr); gap: 24px; } }
 
@@ -695,6 +695,188 @@ nav.scrolled {
 .author-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
 .author-name { font-size: 0.9375rem; font-weight: 700; }
 .author-company { font-size: 0.75rem; color: var(--text-muted); }
+*/
+
+/* TESTIMONIAL SECTION */
+
+.testimonials-section{
+padding:80px 0;
+background:var(--dark-bg);
+overflow:hidden;
+}
+
+.section-head{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.section-head h2{
+font-size:32px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.section-head p{
+color:var(--text-muted);
+font-size:15px;
+}
+
+
+/* CAROUSEL */
+
+.testimonial-carousel{
+position:relative;
+max-width:1100px;
+margin:auto;
+overflow:hidden;
+}
+
+.testimonial-track{
+display:flex;
+transition:transform .6s ease;
+}
+
+.testimonial-card{
+min-width:100%;
+padding:35px;
+border-radius:18px;
+background:var(--dark-card);
+border:1px solid var(--border);
+margin:0 10px;
+transition:all .3s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-6px);
+border-color:rgba(37,99,235,.4);
+box-shadow:0 12px 30px rgba(37,99,235,.15);
+}
+
+.testimonial-card::before{
+content:'"';
+font-size:5rem;
+color:var(--primary);
+opacity:.12;
+position:absolute;
+margin-top:-25px;
+font-family:'Space Grotesk',sans-serif;
+}
+
+
+/* STARS */
+
+.stars{
+color:#f59e0b;
+font-size:14px;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+
+/* TEXT */
+
+.testimonial-card blockquote{
+font-size:15px;
+color:var(--text-muted);
+line-height:1.7;
+margin-bottom:25px;
+}
+
+
+/* AUTHOR */
+
+.testimonial-author{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.author-avatar{
+width:46px;
+height:46px;
+border-radius:50%;
+background:var(--primary);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-weight:700;
+}
+
+.author-name{
+font-weight:700;
+font-size:15px;
+}
+
+.author-company{
+font-size:13px;
+color:var(--text-muted);
+}
+
+
+/* BUTTONS */
+
+.carousel-btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:var(--primary);
+border:none;
+color:#fff;
+width:42px;
+height:42px;
+border-radius:50%;
+cursor:pointer;
+z-index:2;
+}
+
+.carousel-btn.prev{
+left:-15px;
+}
+
+.carousel-btn.next{
+right:-15px;
+}
+
+
+/* DOTS */
+
+.carousel-dots{
+display:flex;
+justify-content:center;
+margin-top:25px;
+gap:10px;
+}
+
+.carousel-dots span{
+width:10px;
+height:10px;
+border-radius:50%;
+background:#555;
+cursor:pointer;
+}
+
+.carousel-dots span.active{
+background:var(--primary);
+}
+
+
+
+/* REVEAL ANIMATION */
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
 
 /* CTA */
 .cta-band {
