@@ -74,24 +74,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ─── EMAILJS CONFIG ───
+// EMAILJS CONFIG
 const EMAILJS_SERVICE_ID  = "service_dg5gy5n";
 const EMAILJS_TEMPLATE_ID = "template_37c9p0x";
 const EMAILJS_PUBLIC_KEY  = "6tQtSEv3IiJDHjIdO";
 
+
 // Initialise EmailJS safely
 window.addEventListener("load", function () {
-  if (typeof emailjs !== 'undefined') {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-  }
+  emailjs.init(EMAILJS_PUBLIC_KEY);
 });
 
-// ─── CONTACT FORM SUBMIT ───
+// CONTACT FORM SUBMIT
 function handleSubmit(event) {
   event.preventDefault();
 
   const btn = document.getElementById("sendBtn");
   const successMsg = document.getElementById("successMessage");
+
   const originalText = btn.innerHTML;
 
   btn.innerHTML = "Sending...";
@@ -114,8 +114,10 @@ function handleSubmit(event) {
     templateParams
   )
   .then(() => {
-    successMsg.style.display = "flex";
+
+    successMsg.style.display = "block";
     event.target.reset();
+
     btn.innerHTML = "✓ Sent Successfully";
 
     setTimeout(() => {
@@ -123,9 +125,12 @@ function handleSubmit(event) {
       btn.disabled = false;
       successMsg.style.display = "none";
     }, 4000);
+
   })
   .catch((error) => {
+
     console.error("EmailJS Error:", error);
+
     btn.innerHTML = "Failed to Send";
 
     setTimeout(() => {
@@ -156,10 +161,10 @@ function addMessage(text, isBot = true) {
 
 function selectOption(option) {
   const responses = {
-    services:  'We offer comprehensive digital services including Web Development, Mobile Apps, Software Development, Digital Marketing, SEO, and AI Automation. Which service interests you most?',
-    pricing:   'Our pricing is project-based and tailored to your specific needs. For an accurate quote, please fill out our contact form or schedule a free consultation with our team!',
+    services: 'We offer comprehensive digital services including Web Development, Mobile Apps, Software Development, Digital Marketing, SEO, and AI Automation. Which service interests you most?',
+    pricing : 'Our pricing is project-based and tailored to your specific needs. For an accurate quote, please fill out our contact form or schedule a free consultation with our team!',
     portfolio: 'We\'ve successfully delivered 20+ projects across various industries. You can view our showcase section above to see some of our recent work. Would you like to discuss your project?',
-    contact:   'You can reach us via:\n📧 Email: contact@azeeltechnologies.com\n📞 Phone: +916009590154\n💬 WhatsApp: Click the green button\n📝 Or fill out the contact form above!'
+    contact : 'You can reach us via:\n📧 Email: hello@azeeltechnologies.com\n📞 Phone: +916009590154\n💬 WhatsApp: Click the green button\n📝 Or fill out the contact form above!'
   };
   addMessage(responses[option], true);
 }
@@ -181,55 +186,85 @@ aiInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') sendAiMessage();
 });
 
-// ─── TESTIMONIAL CAROUSEL ───
-(function () {
-  const track = document.querySelector(".testimonial-track");
-  if (!track) return;
 
-  const slides = document.querySelectorAll(".testimonial-card");
-  const nextBtn = document.querySelector(".carousel-btn.next");
-  const prevBtn = document.querySelector(".carousel-btn.prev");
-  const dotsContainer = document.querySelector(".carousel-dots");
 
-  let index = 0;
 
-  // Create dots
-  slides.forEach(function (_, i) {
-    const dot = document.createElement("span");
-    if (i === 0) dot.classList.add("active");
-    dotsContainer.appendChild(dot);
 
-    dot.addEventListener("click", function () {
-      index = i;
-      updateCarousel();
-    });
-  });
+<script>
 
-  function updateCarousel() {
-    track.style.transform = "translateX(-" + (index * 100) + "%)";
-    document.querySelectorAll(".carousel-dots span").forEach(function (d) {
-      d.classList.remove("active");
-    });
-    document.querySelectorAll(".carousel-dots span")[index].classList.add("active");
-  }
+/* CAROUSEL */
 
-  if (nextBtn) {
-    nextBtn.addEventListener("click", function () {
-      index = (index + 1) % slides.length;
-      updateCarousel();
-    });
-  }
+const track = document.querySelector(".testimonial-track");
+const slides = document.querySelectorAll(".testimonial-card");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+const dotsContainer = document.querySelector(".carousel-dots");
 
-  if (prevBtn) {
-    prevBtn.addEventListener("click", function () {
-      index = (index - 1 + slides.length) % slides.length;
-      updateCarousel();
-    });
-  }
-//test
-  // Auto slide
-  setInterval(function () {
-    index = (index + 1) % slides.length;
-    updateCarousel();
-  }, 5000);
-})();
+let index = 0;
+
+/* DOTS */
+
+slides.forEach((_,i)=>{
+const dot=document.createElement("span")
+if(i===0) dot.classList.add("active")
+dotsContainer.appendChild(dot)
+
+dot.addEventListener("click",()=>{
+index=i
+updateCarousel()
+})
+})
+
+const dots=document.querySelectorAll(".carousel-dots span")
+
+function updateCarousel(){
+
+track.style.transform=`translateX(-${index*100}%)`
+
+dots.forEach(d=>d.classList.remove("active"))
+dots[index].classList.add("active")
+
+}
+
+next.onclick=()=>{
+index=(index+1)%slides.length
+updateCarousel()
+}
+
+prev.onclick=()=>{
+index=(index-1+slides.length)%slides.length
+updateCarousel()
+}
+
+/* AUTO SLIDE */
+
+setInterval(()=>{
+index=(index+1)%slides.length
+updateCarousel()
+},5000)
+
+
+
+/* SCROLL REVEAL */
+
+const reveals=document.querySelectorAll(".reveal")
+
+function revealScroll(){
+
+reveals.forEach(el=>{
+
+const windowHeight=window.innerHeight
+const top=el.getBoundingClientRect().top
+
+if(top<windowHeight-100){
+el.classList.add("active")
+}
+
+})
+
+}
+
+window.addEventListener("scroll",revealScroll)
+revealScroll()
+
+</script>
