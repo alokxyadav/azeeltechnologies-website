@@ -1341,3 +1341,12 @@ footer { background: var(--dark-2); border-top: 1px solid var(--border); padding
   gap:16px;
   flex-wrap:wrap;
 }
+
+
+.cookie-banner.showcaseeeee{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
