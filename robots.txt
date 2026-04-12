@@ -1,9 +1,7 @@
 # ════════════════════════════════════════════════════════════════
 #  AZEEL TECHNOLOGIES — robots.txt
 #  Website   : https://azeeltechnologies.com
-#  GitHub    : https://github.com/alokxyadav/azeeltechnologies-website
 #  Updated   : 2026-04-12
-#
 #  PURPOSE:
 #  This file tells all search engine crawlers what they are
 #  allowed to crawl and where to find the sitemap.
